@@ -1,0 +1,14 @@
+{
+    "type": "code",
+    "modid": "chatping",
+    "name": "ChatPing",
+    "authors": [
+        "SiiMeR"
+    ],
+    "description": "Makes an audible sound when someone writes to you in a group",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.19.7"
+    },
+    "side": "Client"
+}
