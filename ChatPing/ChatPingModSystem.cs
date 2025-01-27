@@ -22,6 +22,13 @@ namespace ChatPing
                     {
                         return;
                     }
+
+                    if (config.PingForGeneralChat && groupId == 0)
+                    {
+                        api.World.PlaySoundAt(new AssetLocation("sounds/player/projectilehit"), api.World.Player.Entity,
+                            volume: config.Volume, randomizePitch: false);
+                        return;
+                    }
                     
                     var playerGroups = api.World.Player.Groups;
                     var matchingGroups = playerGroups.Where((group) => config.ChannelsToPingFor.Contains(group.GroupName))

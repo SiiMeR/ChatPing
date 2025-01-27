@@ -45,6 +45,7 @@ public static class ModConfig
 
 public class Config
 {
+    public bool PingForGeneralChat;
     public HashSet<string> ChannelsToPingFor;
     public float Volume;
 
